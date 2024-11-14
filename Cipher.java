@@ -14,30 +14,30 @@ public class Cipher {
         char[][] alpha = {
             {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' '}, 
             {'F', 'P', 'U', 'G', 'Z', 'D', 'C', 'S', 'K', 'Q', 'N', 'A', 'V', 'X', 'M', 'E', 'H', 'Y', 'O', 'T', 'W', 'R', 'I', 'J', 'L', 'B', '@'}, 
-            {'A', 'T', 'C', 'B', 'W', 'U', 'E', 'D', 'F', 'Z', 'V', 'N', '#', 'H', 'I', 'O', 'M', 'J', 'K', 'P', 'L', 'Q', 'Y', 'R', 'S', 'X', 'G'},
+            {'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', ' '},
             {'Q', 'X', 'S', 'Y', 'E', 'T', 'R', 'D', 'K', '~', 'M', 'F', 'L', 'B', 'G', 'C', 'H', 'U', 'N', 'I', 'J', 'V', 'O', '*', 'P', 'Z', 'W'}, 
-            {'Z', 'Y', 'X', 'W', 'V', 'U', '*', 'S', 'R', 'Q', 'P', 'O', 'N', 'M', 'L', 'K', 'J', '#', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A', '£'}, 
+            {'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', ' '}, 
             {'O', '}', 'U', 'W', 'F', '@', 'S', 'V', 'E', 'I', 'A', 'J', 'X', 'B', 'K', 'D', 'C', 'L', 'Y', '~', 'M', 'N', 'T', 'Q', 'R', 'P', 'R'}, 
-            {'A', 'R', 'Q', 'S', 'P', 'F', 'B', '=', 'N', 'C', 'T', 'M', 'D', 'U', 'V', 'K', '+', 'W', 'J', 'X', 'I', 'F', 'Y', 'G', '-', 'H', 'Z'}, 
+            {'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', ' '}, 
             {'S', 'X', 'T', '+', 'A', 'I', 'Z', 'V', 'B', 'K', 'W', 'H', 'J', 'C', 'Y', 'L', 'D', '=', 'N', 'E', 'G', 'O', 'F', 'P', 'Q', 'R', '&'}, 
             {'O', 'N', 'E', 'F', 'M', 'D', '-', 'G', 'C', 'H', 'Z', 'V', 'B', 'I', 'U', 'Y', 'T', 'K', 'J', 'A', 'S', 'R', 'X', 'Q', 'W', 'P', '!'},
-            {'T', 'U', 'M', 'A', 'S', 'O', 'N', 'I', 'E', 'L', 'Z', '+', 'X', 'W', 'R', 'Q', 'P', 'V', 'J', 'K', 'H', 'G', 'F', 'D', 'C', 'B', '?'}, 
+            {'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', ' '}, 
             {'U', '0', 'G', '^', 'Y', 'Z', 'W', 'X', 'L', 'K', 'J', 'I', 'M', 'D', 'C', 'B', 'E', '{', 'F', 'P', 'S', 'H', 'T', 'O', 'V', 'N', '¬'}, 
             {'H', 'I', 'O', 'R', '7', 'T', 'Q', 'V', 'X', '[', 'J', 'K', 'B', 'L', 'Z', 'C', 'M', 'G', 'N', 'D', 'F', 'U', 'E', 'Y', 'W', 'S', '+'},
             {'T', 'O', 'B', 'Y', 'V', 'X', 'Z', 'W', 'D', 'R', 'E', 'N', 'A', 'F', 'J', 'G', 'M', 'U', 'Q', 'C', 'P', 'K', 'H', 'S', 'I', 'L', '-'}, 
-            {'J', 'I', 'M', 'D', 'T', 'U', 'W', 'E', 'L', 'N', 'F', 'V', 'S', 'X', 'B', 'O', 'G', 'Y', 'A', 'P', 'H', 'C', 'Q', 'K', 'R', 'Z', '['}, 
+            {'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', ' '}, 
             {'C', 'L', 'A', 'I', 'R', '%', 'P', 'Z', 'W', 'S', 'X', 'B', 'M', 'Y', '}', 'Q', 'D', 'T', 'F', 'U', '3', 'G', 'K', 'J', 'H', 'N', ']'}, 
             {'B', 'L', 'I', 'N', 'K', 'Y', 'U', 'Q', '8', 'O', 'W', 'R', 'S', 'E', 'P', 'J', 'D', 'H', 'Z', 'A', 'F', 'M', 'C', 'G', 'V', 'T', '{'}, 
             {'M', 'E', 'R', 'L', 'I', 'N', 'Z', 'T', 'G', 'O', 'U', 'A', 'Y', 'S', 'B', 'H', 'V', 'C', 'K', 'J', 'D', 'X', 'F', 'P', 'W', 'Q', '}'},
-            {'Q', 'X', 'Y', 'J', '+', 'A', 'S', 'K', 'L', 'B', 'T', 'I', 'M', 'C', 'N', 'H', 'U', 'D', 'G', 'Z', 'E', 'V', 'O', 'F', 'P', 'W', '_'}, 
-            {'H', ')', 'M', 'A', 'W', 'R', 'B', 'X', 'I', '\', 'N', 'Y', 'C', 'K', 'T', 'D', 'O', 'U', 'E', 'J', '+', 'F', 'P', 'L', 'V', 'G', '('},
-            {'D', 'F', 'H', 'K', 'L', 'N', 'P', '-', 'B', 'T', 'V', 'C', 'X', 'Y', 'W', 'Z', 'U', 'S', 'Q', 'O', 'A', 'M', 'J', 'I', 'G', 'E', ')'}, 
+            {'Q', 'X', 'Y', 'J', '+', 'A', 'S', 'K', 'L', 'B', 'T', 'I', 'M', 'C', 'N', 'H', 'U', 'D', 'G', 'Z', 'E', 'V', 'O', 'F', 'P', 'W', ' _'}, 
+            {'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', ' '},
+            {'D', '@', 'H', 'K', 'L', 'N', 'P', '-', 'B', 'T', 'V', 'C', 'X', 'Y', 'W', 'Z', 'U', 'S', 'Q', 'O', 'A', 'M', 'J', 'I', 'G', 'E', ')'}, 
             {'A', 'Z', 'B', 'Y', 'C', 'W', 'D', 'X', 'E', 'V', 'F', 'U', 'G', 'T', 'H', 'S', 'I', 'R', 'K', 'Q', 'J', '$', 'L', 'O', 'M', 'N', '@'}, 
-            {'I', 'D', 'S', 'F', 'R', 'W', 'Q', 'Y', 'X', 'B', 'Z', 'V', 'U', 'E', 'J', 'T', 'K', 'P', 'A', 'O', 'G', 'N', 'M', 'C', 'L', 'H', '~'}, 
+            {'I', 'D', 'S', 'F', 'R', 'W', 'Q', '+', 'X', 'B', 'Z', 'V', 'U', 'E', 'J', 'T', 'K', 'P', 'A', 'O', 'G', 'N', 'M', 'C', 'L', 'H', '~'}, 
             {'C', 'N', 'M', 'A', '2', 'O', 'B', 'S', 'V', 'Z', 'Y', 'H', 'W', 'X', 'I', 'T', '£', 'Q', 'K', 'P', 'R', 'U', 'D', 'J', 'L', 'F', '#'}, 
-            {'K', 'V', 'A', 'J', 'B', 'W', 'U', 'C', 'L', '4', 'D', 'T', 'M', 'E', 'Z', 'N', 'F', 'Y', 'O', 'S', 'H', 'P', 'G', 'Q', 'I', 'R', '?'}, 
-            {'O', 'F', 'Q', 'W', 'D', 'M', 'N', 'V', 'A', 'L', 'C', 'R', 'K', 'U', 'T', 'B', 'X', 'J', 'G', 'H', 'Z', 'S', 'Y', 'E', 'I', 'P', '!'}, 
-            {'B', 'Y', 'E', 'G', 'A', 'N', 'P', 'O', 'C', 'R', 'T', 'D', 'J', 'Z', 'L', 'K', 'X', 'F', 'V', 'W', 'I', 'U', 'H', 'S', 'M', 'Q', '&'}, 
+            {'K', 'V', 'A', '_', 'B', 'W', 'U', 'C', 'L', '4', 'D', 'T', '=', 'E', 'Z', 'N', 'F', 'Y', 'O', 'S', 'H', 'P', 'G', 'Q', 'I', 'R', '?'}, 
+            {'O', 'F', 'Q', 'W', '3', 'M', 'N', '-', 'A', 'L', 'C', 'R', 'K', 'U', 'T', 'B', '+', 'J', 'G', 'H', 'Z', 'S', '9', 'E', 'I', 'P', '!'}, 
+            {'}', 'Y', '5', 'G', 'A', 'N', 'P', 'O', 'C', 'R', 'T', 'D', 'J', 'Z', 'L', 'K', 'X', 'F', 'V', '3', 'I', 'U', 'H', 'S', 'M', 'Q', '&'}, 
             {'H', 'K', '5', 'A', 'Q', 'V', 'B', 'S', 'X', '8', 'C', 'W', 'U', 'Z', 'D', 'Y', 'L', 'T', 'E', '2', 'P', 'F', 'N', '[', 'G', 'I', '$'}};
         
         String[] guessWord = {"Apple of my Eye", "Salt Everything", "Campgrounds", "Ghostbuster", "Cash is King", "Deviously", "Needle in a Haystack", "Recyclables", "Cat Got Your Tongue", "Indubitably", "Pressurised", "Misquoted", "Nightmares", "Shipwrecked", "Brainstormed Ideas", "Sculptured", "Haemoglobin", "Drumsticks Set", "Methodology Terms", "Exemplified", "Xylophone", "Seven Years of Bad Luck", "Haemoneurothorax", "Vibrantly", "Doomed people never blame themselves", "People in Glasshouse should not through stones"};
@@ -52,7 +52,7 @@ public class Cipher {
             case 1:
                 Boolean play = true;
 
-                JOptionPane.showMessageDialog(null, "Mono-alphabetic Substitution is a one-to-one cipher.\nHistorically used by Romans with a simple cyclic displacement of the alphabet as the substitution.");
+                
                 
                 for(int level = 1; play == true; level++){
                     //example word 1
@@ -149,6 +149,13 @@ public class Cipher {
                                 guessWE.insert(s, alpha[level][i]);
                             }
                         }
+                    }
+
+                    if (level == 2){
+                        JOptionPane.showMessageDialog(null, "Caeser Cipher involves shifting each letter of a message by a set number of letters over.\nWas developed by  Roman General Gaius Julius Caesar for correspondence with friends in Roman.\nDid ypu figure out what the shift key was?");
+                    }
+                    else if (level==1){
+                        JOptionPane.showMessageDialog(null, "Mono-alphabetic Substitution is a one-to-one cipher.\nHistorically used by Romans with a simple cyclic displacement of the alphabet as the substitution.");
                     }
 
                     Boolean guessed = false;
