@@ -51,6 +51,8 @@ public class Cipher {
         switch (type) {
             case 1:
                 Boolean play = true;
+
+                JOptionPane.showMessageDialog(null, "Mono-alphabetic Substitution is a one-to-one cipher.\nHistorically used by Romans with a simple cyclic displacement of the alphabet as the substitution.");
                 
                 for(int level = 1; play == true; level++){
                     //example word 1
