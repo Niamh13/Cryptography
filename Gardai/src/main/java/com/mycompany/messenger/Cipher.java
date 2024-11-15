@@ -154,6 +154,13 @@ public class Cipher {
                         }
                     }
 
+                    if (level == 2){
+                        JOptionPane.showMessageDialog(null, "Caeser Cipher involves shifting each letter of a message by a set number of letters over.\nWas developed by  Roman General Gaius Julius Caesar for correspondence with friends in Roman.\nDid ypu figure out what the shift key was?");
+                    }
+                    else if (level==1){
+                        JOptionPane.showMessageDialog(null, "Mono-alphabetic Substitution is a one-to-one cipher.\nHistorically used by Romans with a simple cyclic displacement of the alphabet as the substitution.");
+                    }
+
                     Boolean guessed = false;
 
                     for (int numG = 1; guessed == false; numG++) {
