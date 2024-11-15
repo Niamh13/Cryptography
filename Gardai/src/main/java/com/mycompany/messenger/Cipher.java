@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author joshokeeffe
+ * @author niamh
  */
 public class Cipher {
 
